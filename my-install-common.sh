@@ -19,13 +19,13 @@ apt install steam -y
 apt install discord - y #may need to call discord in terminal to create GUI
 
 #brave
-apt-get purge firefox
+apt-get purge firefox -y
 
-apt install apt-transport-https curl
+apt install apt-transport-https curl -y
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
-apt install brave-browser
+apt install brave-browser -y
 
 
 #================
