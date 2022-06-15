@@ -16,7 +16,7 @@ apt upgrades -y
 apt install steam -y
 
 #discord 
-apt install discord - y 
+apt install discord -y 
 gnome-terminal --tab --command=discord # to create gui
 
 #brave
