@@ -13,6 +13,14 @@ wget https://www.plasticscm.com/plasticrepo/stable/ubuntu/Release.key -O - | sud
 sudo apt-get update
 
 # https://plasticscmsupport.zendesk.com/hc/en-us/articles/360013103159-How-to-Install-Plastic-GUI-in-Ubuntu-19-10-and-later-
+
+cd /etc/apt/sources.list.d/
+sudo touch bionic-oldlibs.list
+echo "deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
+deb http://us.archive.ubuntu.com/ubuntu/ bionic universe" > bionic-oldlibs.list
+cd\
+sudo apt update
+
 # If the apt-update is missing a key run:
 # sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 3B4FE6ACC0B21F32
 
@@ -23,6 +31,8 @@ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 3B4FE6ACC
 # 2. Installing Plastic SCM Cloud Edition
 # =======================================
 
-sudo apt-get install plasticscm-cloud
+sudo apt-get install plasticscm-cloud -y
+
+plasticgui #done
 
 
