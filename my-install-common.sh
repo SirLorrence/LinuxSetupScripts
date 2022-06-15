@@ -16,7 +16,8 @@ apt upgrades -y
 apt install steam -y
 
 #discord 
-apt install discord - y #may need to call discord in terminal to create GUI
+apt install discord - y 
+gnome-terminal --tab --command=discord # to create gui
 
 #brave
 apt-get purge firefox -y
