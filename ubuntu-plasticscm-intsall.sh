@@ -18,7 +18,7 @@ cd /etc/apt/sources.list.d/
 sudo touch bionic-oldlibs.list
 echo "deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
 deb http://us.archive.ubuntu.com/ubuntu/ bionic universe" > bionic-oldlibs.list
-cd\
+cd
 sudo apt update
 
 # If the apt-update is missing a key run:
