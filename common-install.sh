@@ -30,6 +30,10 @@ flatpak install flathub com.discordapp.Discord
 # Spotify 
 flatpak install flathub com.spotify.Client
 
+# Fatseal
+flatpak install flathub com.github.tchx84.Flatseal
+
+
 #================
 # FINAL CLEAN UP
 #================
