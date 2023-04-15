@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#run this with sudo bash {location}
+#run this with bash {location}
 
 #=================
 # INITIAL UPDATES
 #=================
-apt updates
-apt upgrades -y
+sudo apt update
+sudo apt upgrade -y
 
 #===========
 # INSTALLS
@@ -19,19 +19,19 @@ apt install steam -y
 # >>>>>> FLATPAKS
 
 # brave
-flatpak install flathub com.brave.Browser
+flatpak install flathub com.brave.Browser -y
 
 # bottles - for gog
-flatpak install flathub com.usebottles.bottles
+flatpak install flathub com.usebottles.bottles -y
 
 # discord
-flatpak install flathub com.discordapp.Discord
+flatpak install flathub com.discordapp.Discord -y
 
 # Spotify 
-flatpak install flathub com.spotify.Client
+flatpak install flathub com.spotify.Client -y
 
 # Fatseal
-flatpak install flathub com.github.tchx84.Flatseal
+flatpak install flathub com.github.tchx84.Flatseal -y
 
 
 #================
@@ -39,4 +39,4 @@ flatpak install flathub com.github.tchx84.Flatseal
 #================
 apt-get purge firefox -y
 
-# apt updates
+sudo apt update
